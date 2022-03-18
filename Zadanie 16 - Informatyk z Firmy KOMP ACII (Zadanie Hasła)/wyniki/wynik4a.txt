@@ -1,2 +1,0 @@
-Ilość hasł parzystych: 105
-Ilość hasł nieparzystych: 95
