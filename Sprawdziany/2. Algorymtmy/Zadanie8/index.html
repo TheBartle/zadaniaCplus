@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 8</title>
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+    <div class="inline">
+        <!--<img src="./sortowanie.png" width="500px" alt="">--><h1>Zaznacz prawidłowe zakończenie zdania (może być ich więcej niż jedno). Algorytm Euklidesa może występować w wersji:</h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
+    </div>
+    <!-- <pre>
+        <code class="language-cpp">int main() {
+            for(int i = 0; i < 3; i++)
+            for(int j = 0; j < 3; j++)
+            cout << "o";
+            cout << endl;   
+            }</code></pre> -->
+    <ol type="A">
+        <li><input type="checkbox" id="1" name="pytanie" value="A"><label for="1">Z dzieleniem</label></li>
+        <li><input type="checkbox" id="2" name="pytanie" value="B"><label for="2">Z mnożeniem</label></li>
+        <li><input type="checkbox" id="3" name="pytanie" value="C"><label for="3">Z dodawaniem</label></li>
+        <li><input type="checkbox" id="4" name="pytanie" value="D"><label for="4">Z odejmowaniem</label></li>
+    </ol>
+    <button onclick="check();">Zatwierdź</button>
+
+    <div id="odpow">
+    </div>
+
+    <a href="../">Powrót</a>
+
+    <script>
+        function check() {
+            var odp = document.querySelectorAll("input[name='pytanie']:checked");
+            console.log(odp)
+            var element = document.getElementById("odpow");
+
+            let values = [];
+            // let popraw = ["B", "C"]
+            odp.forEach((checkbox) => {
+                values.push(checkbox.value);
+            });
+
+            if(values.length == 2 && values[0] == "A" && values[1] == "D") {
+                element.innerHTML = "<span style='color:green;'>Poprawna odpowiedź</span>";
+            } else {
+                element.innerHTML = "<span style='color:red;'>Zła odpowiedź</span>";
+            }
+        }
+    </script>
+
+
+
+<script src="../assets/js/prism.js"></script>
+</body>
+</html>
