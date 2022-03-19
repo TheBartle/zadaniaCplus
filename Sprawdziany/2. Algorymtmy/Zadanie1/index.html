@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 1</title>
+
+    <style>
+        #odpow {
+            font-size: 48px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jaka będzie kolejna liczba ciągu Fibonnaciego 1, 1, 2, 3, 5, 8, 13, 21?</h1>
+    <ol type="A">
+        <li><input type="radio" name="pytanie" value="30">30</li>
+        <li><input type="radio" name="pytanie" value="32">32</li>
+        <li><input type="radio" name="pytanie" value="34">34</li>
+        <li><input type="radio" name="pytanie" value="33">33</li>
+    </ol>
+    <button onclick="check();">Zatwierdź</button>
+
+    <div id="odpow">
+    </div>
+
+    <a href="../">Powrót</a>
+
+    <script>
+        function check() {
+            var odp = document.body.querySelector("input[name='pytanie']:checked").value;
+            var element = document.getElementById("odpow");
+            if(odp == "34") {
+                element.innerHTML = "<span style='color:green;'>Poprawna odpowiedź</span>";
+            } else {
+                element.innerHTML = "<span style='color:red;'>Zła odpowiedź</span>";
+            }
+        }
+    </script>
+
+</body>
+</html>
