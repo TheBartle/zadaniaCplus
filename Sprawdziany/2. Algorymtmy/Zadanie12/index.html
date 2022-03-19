@@ -11,20 +11,20 @@
 <body>
 
     <div class="inline">
-        <!--<img src="./sortowanie.png" width="500px" alt="">--><h1></h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
+        <!--<img src="./sortowanie.png" width="500px" alt="">-->    <pre>
+        <code class="language-cpp">int n=32;
+            while(n > 1)
+            {
+                cout << "# ";
+                n=n/2;
+            }</code></pre><h1>Co ujrzymy na ekranie?</h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
     </div>
-    <!-- <pre>
-        <code class="language-cpp">int main() {
-            for(int i = 0; i < 3; i++)
-            for(int j = 0; j < 3; j++)
-            cout << "o";
-            cout << endl;   
-            }</code></pre> -->
+
     <ol type="A">
-        <li><input type="radio" id="1" name="pytanie" value="A"><label for="1"></label></li>
-        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2"></label></li>
-        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3"></label></li>
-        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4"></label></li>
+        <li><input type="radio" id="1" name="pytanie" value="A"><label for="1">32 znaki '#' oddzielonych spacją</label></li>
+        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2">16 znaków '#' oddzielonych spacją</label></li>
+        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3">Żadna odpowiedź nie jest poprawna</label></li>
+        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4">5 znaków '#' oddzielonych spacją</label></li>
     </ol>
     <button onclick="check();">Zatwierdź</button>
 
@@ -37,7 +37,7 @@
         function check() {
             var odp = document.body.querySelector("input[name='pytanie']:checked").value;
             var element = document.getElementById("odpow");
-            if(odp == "") {
+            if(odp == "D") {
                 element.innerHTML = "<span style='color:green;'>Poprawna odpowiedź</span>";
             } else {
                 element.innerHTML = "<span style='color:red;'>Zła odpowiedź</span>";

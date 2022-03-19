@@ -15,7 +15,7 @@ int nwd(int a, int b) {
 
 
 int main() {
-    cout << nwd(2, 2137) << endl;
+    cout << nwd(2, 20) << endl;
 
 
     return 0;
