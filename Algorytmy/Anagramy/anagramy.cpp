@@ -14,7 +14,6 @@ bool sprawdzanie_anagramu(string wyraz1, string wyraz2) {
     if(wyraz1.length() != wyraz2.length()) 
         return false;
 
-    char temp;
     int tab1[wyraz1.size()];
     int tab2[wyraz2.size()];
 
