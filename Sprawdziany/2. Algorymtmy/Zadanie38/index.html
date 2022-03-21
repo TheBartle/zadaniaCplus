@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 6</title>
+    <title>Zadanie 38</title>
     <link rel="stylesheet" href="../assets/css/prism.css">
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 
     <div class="inline">
-        <!--<img src="./sortowanie.png" width="500px" alt="">--><h1></h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
+        <!--<img src="./sortowanie.png" width="500px" alt="">--><h1>Podana jest tablica: int T[3][2] = {1, 2, 3, 4, 5, 6};</h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
     </div>
     <!-- <pre>
         <code class="language-cpp">int main() {
@@ -21,10 +21,10 @@
             cout << endl;   
             }</code></pre> -->
     <ol type="A">
-        <li><input type="radio" id="1" name="pytanie" value="A"><label for="1"></label></li>
-        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2"></label></li>
-        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3"></label></li>
-        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4"></label></li>
+        <li><input type="radio" id="1" name="pytanie" value="A"><label for="1">T[2][1]</label></li>
+        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2">T[1][2]</label></li>
+        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3">T[2][0]</label></li>
+        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4">T[0][2]</label></li>
     </ol>
     <button onclick="check();">Zatwierdź</button>
 
@@ -37,7 +37,7 @@
         function check() {
             var odp = document.body.querySelector("input[name='pytanie']:checked").value;
             var element = document.getElementById("odpow");
-            if(odp == "") {
+            if(odp == "C") {
                 element.innerHTML = "<span style='color:green;'>Poprawna odpowiedź</span>";
             } else {
                 element.innerHTML = "<span style='color:red;'>Zła odpowiedź</span>";

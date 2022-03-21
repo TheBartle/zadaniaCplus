@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 6</title>
+    <title>Zadanie 29</title>
     <link rel="stylesheet" href="../assets/css/prism.css">
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 
     <div class="inline">
-        <!--<img src="./sortowanie.png" width="500px" alt="">--><h1></h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
+        <!--<img src="./sortowanie.png" width="500px" alt="">-->  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
     </div>
-    <!-- <pre>
-        <code class="language-cpp">int main() {
-            for(int i = 0; i < 3; i++)
-            for(int j = 0; j < 3; j++)
-            cout << "o";
-            cout << endl;   
-            }</code></pre> -->
+<pre>
+<code class="language-cpp">int funkcja(float x)</code></pre>
     <ol type="A">
-        <li><input type="radio" id="1" name="pytanie" value="A"><label for="1"></label></li>
-        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2"></label></li>
-        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3"></label></li>
-        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4"></label></li>
+        <li><input type="radio" id="1" name="pytanie" value="A"><label for="1">Funkcja nie zwracająca żadnej wartości i przyjmującą jeden argument wartość x typu całkowitego.</label></li>
+        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2">Funkcja zwracająca wartość rzecziwistą i przyjmujaca jako argumenty wartość x i typu całkowitego</label></li>
+        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3">Funkcja nie zwracająca żadnej wartości i nie przyjmujaca żadnych argumentów.</label></li>
+        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4">Funkcja zwracająca wartość całkowitą i przyjmująca jako argumenat wartość x typu rzeczywistego.</label></li>
     </ol>
     <button onclick="check();">Zatwierdź</button>
 
@@ -37,7 +32,7 @@
         function check() {
             var odp = document.body.querySelector("input[name='pytanie']:checked").value;
             var element = document.getElementById("odpow");
-            if(odp == "") {
+            if(odp == "D") {
                 element.innerHTML = "<span style='color:green;'>Poprawna odpowiedź</span>";
             } else {
                 element.innerHTML = "<span style='color:red;'>Zła odpowiedź</span>";

@@ -11,7 +11,7 @@
 <body>
 
     <div class="inline">
-        <!--<img src="./sortowanie.png" width="500px" alt="">--><h1></h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
+        <!--<img src="./sortowanie.png" width="500px" alt="">--><h1>Sito Eratostenesa to algorytm wyznaczania liczb:</h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
     </div>
     <!-- <pre>
         <code class="language-cpp">int main() {
@@ -21,10 +21,10 @@
             cout << endl;   
             }</code></pre> -->
     <ol type="A">
-        <li><input type="radio" id="1" name="pytanie" value="A"><label for="1"></label></li>
-        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2"></label></li>
-        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3"></label></li>
-        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4"></label></li>
+        <li><input type="radio" id="1" name="pytanie" value="A"><label for="1">Bliźniaczych</label></li>
+        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2">Pierwszych</label></li>
+        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3">Pseudopierwszych</label></li>
+        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4">Doskonałych</label></li>
     </ol>
     <button onclick="check();">Zatwierdź</button>
 
@@ -37,7 +37,7 @@
         function check() {
             var odp = document.body.querySelector("input[name='pytanie']:checked").value;
             var element = document.getElementById("odpow");
-            if(odp == "") {
+            if(odp == "B") {
                 element.innerHTML = "<span style='color:green;'>Poprawna odpowiedź</span>";
             } else {
                 element.innerHTML = "<span style='color:red;'>Zła odpowiedź</span>";

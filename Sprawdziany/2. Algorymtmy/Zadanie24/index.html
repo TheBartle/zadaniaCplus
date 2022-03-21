@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 6</title>
+    <title>Zadanie 24</title>
     <link rel="stylesheet" href="../assets/css/prism.css">
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 
     <div class="inline">
-        <!--<img src="./sortowanie.png" width="500px" alt="">--><h1></h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
+        <!--<img src="./sortowanie.png" width="500px" alt="">--><h1>Wybierz prawidłowy opis funkcji:</h1>  <!--<a href="Zadanie5.cpp">Pobierz rozwiązanie</a>-->
     </div>
-    <!-- <pre>
-        <code class="language-cpp">int main() {
-            for(int i = 0; i < 3; i++)
-            for(int j = 0; j < 3; j++)
-            cout << "o";
-            cout << endl;   
-            }</code></pre> -->
+    <pre>
+<code class="language-cpp">void fun(int stopien, char znaczek, int nachylenie);</code></pre>
     <ol type="A">
-        <li><input type="radio" id="1" name="pytanie" value="A"><label for="1"></label></li>
-        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2"></label></li>
-        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3"></label></li>
-        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4"></label></li>
+        <li><input type="radio" id="1" name="pytanie" value="A">fun jest funkcją (wywoływaną z 3 argumentami typu: int, char, int) która zwraca wartość typu char.<label for="1"></label></li>
+        <li><input type="radio" id="2" name="pytanie" value="B"><label for="2">fun jest funkcją (wywoływaną z 2 argumentami typu: int, char, char) która (chyba nie) zwraca żadnej wartości typu int</label></li>
+        <li><input type="radio" id="3" name="pytanie" value="C"><label for="3">fun jest funkcją (wywoływaną z 3 argumentami typu: int, char, int) która nie zwraca żadnej wartości</label></li>
+        <li><input type="radio" id="4" name="pytanie" value="D"><label for="4">fun jest funckją (wywoływaną z 3 argumentami: typu char, char, int) która nie zwraca żadnej wartości.</label></li>
     </ol>
     <button onclick="check();">Zatwierdź</button>
 
@@ -37,7 +32,7 @@
         function check() {
             var odp = document.body.querySelector("input[name='pytanie']:checked").value;
             var element = document.getElementById("odpow");
-            if(odp == "") {
+            if(odp == "C") {
                 element.innerHTML = "<span style='color:green;'>Poprawna odpowiedź</span>";
             } else {
                 element.innerHTML = "<span style='color:red;'>Zła odpowiedź</span>";
